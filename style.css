@@ -1,0 +1,142 @@
+@import "reset.css";
+
+body {
+   width: 100%;
+   height: 100%;
+   font-family: "Quicksand", sans-serif;
+   background-color: rgba(0, 0, 0, 0.75);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+/* .js-clock {
+} */
+
+h1 {
+   color: rgba(0, 0, 0, 0.9);
+   font-size: 200px;
+   font-weight: 400;
+   text-align: center;
+   margin-top: 240px;
+   margin-bottom: 24px;
+}
+
+@keyframes borderBottomSizing {
+   from {
+      width: 320px;
+   }
+   to {
+      width: 480px;
+   }
+}
+
+input[type="text"] {
+   width: 320px;
+}
+
+input[type="text"]:focus {
+   animation: borderBottomSizing 0.5s ease-in-out both;
+}
+
+input[type="text"],
+input[type="text"]:focus {
+   border-bottom: 2px solid rgba(0, 0, 0, 0.9);
+   background-color: rgba(0, 0, 0, 0);
+   letter-spacing: 0.5px;
+   text-align: center;
+   box-sizing: border-box;
+   height: 60px;
+   font-size: 32px;
+   font-family: "Quicksand", sans-serif;
+   font-weight: 600;
+}
+
+input[type="text"]::placeholder {
+   font-family: "Quicksand", sans-serif;
+   color: rgba(0, 0, 0, 0.9);
+   font-size: 32px;
+   font-weight: 600;
+}
+
+.js-form,
+.form {
+   margin-bottom: 24px;
+}
+
+.js-toDoList {
+   margin-top: 16px;
+   margin-bottom: 24px;
+}
+
+.btn {
+   cursor: pointer;
+}
+
+.clicked {
+   color: rgb(205, 125, 120);
+}
+
+.form,
+.greetings {
+   display: none;
+}
+
+.showing {
+   display: block;
+   font-size: 24px;
+   padding: 12px 0px;
+   font-weight: 600;
+}
+
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}
+
+.bgImage {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   animation: fadeIn 0.6s ease-out;
+}
+
+.js-toDoList li {
+   padding: 8px;
+   font-size: 24px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.js-toDoList span {
+   color: rgba(0, 0, 0, 0.9);
+   font-weight: 600;
+}
+
+.js-toDoList button {
+   border: none;
+   border-radius: 12px;
+   padding: 4px 2px;
+   margin: 0px 4px;
+   background-color: rgba(0, 0, 0, 0);
+}
+
+.js-toDoList button:hover {
+   border-radius: 12px;
+   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.js-weather {
+   font-size: 24px;
+   font-weight: 600;
+   color: rgba(0, 0, 0, 0.9);
+}
